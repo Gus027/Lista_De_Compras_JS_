@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sua Lista</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+		<div class="topnav" id="menu">
+			<a href="https://www.linkedin.com/in/gustavo-gomes-ferreira-2096a2230/">Linkedin</a>
+			<a href="https://api.whatsapp.com/send?phone=5527998471555&text=Meu%20whatsapp">Contato</a>
+		</div>
+		<div class="gui-color-primaria"> 
+			   <div class="header"> 
+				<h1 class="text-center">Lista de Compra Automatizada</h1>
+			   </div>
+		</div>
+		<main>
+			<P>...</P>
+			<section class="container">
+				<h2>Minha Lista</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Produto</th>
+							<th>Quantidade</th>
+						</tr>
+					</thead>
+					
+					<tbody id="tabela-lista">
+						<tr class="lista" id="primeira-tupla">
+							<td class="info-nome">&nbsp;</td>
+							<td class="info-quantidade">&nbsp;</td>
+						</tr>
+
+						<tr class="lista" >
+							<td class="info-nome">Pao</td>
+							<td class="info-quantidade">2</td>
+						</tr>
+<!-- 
+						<tr class="lista" >
+							<td class="info-nome">&nbsp;</td>
+							<td class="info-quantidade">&nbsp;</td>
+						</tr>
+
+						<tr class="lista">
+							<td class="info-nome">&nbsp;</td>
+							<td class="info-quantidade">&nbsp;</td>
+						</tr>
+						<tr class="lista" >
+							<td class="info-nome">&nbsp;</td>
+							<td class="info-quantidade">&nbsp;</td>
+						</tr>
+-->
+					</tbody>
+					
+				</table>
+
+			</section>
+		</main>
+		<section class="container">
+			<h2 id="titulo-form">Adicionar Produto a Lista</h2>
+			<span id="error"></span>
+			<form id="form-adiciona" name="myForm"  method="post" action="#" onsubmit="return valida_form(this)">
+				<div class="">
+					<label for="produtoInp">Produto:</label>
+					<input id="nomeInput" name="produtoInp" type="text" placeholder="Digite o nome do produto" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="quantidadeInput">Quantidade:</label>
+					<input id="quantidadeInput" name="quantidadeInp" type="text" placeholder="Digite a quantidade do seu produto" class="campo campo-medio">
+				</div>
+				<button id="adicionar-produto" class="botao bto-principal">Adicionar Produto</button>
+			</form>
+		</section>
+
+		<script src="js/index.js"></script>
+		<script src="js/tratamentos.js"></script>
+	</body>
+</html>

@@ -1,0 +1,181 @@
+*{
+	box-sizing: border-box;
+ }
+
+
+
+.gui-color-primaria{
+    background-color: black;
+
+}
+
+.text-center{
+    text-align: center;
+    color: white;
+    font-style: initial;
+}
+
+
+
+body{
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+}
+/*-----COLUNA DE NAVEGAÇÃO----*/
+.topnav {
+	overflow: hidden;
+	background-color: rgb(255, 254, 254);
+  }
+  /* Style the topnav links */
+  #menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+  }
+
+  .topnav a {
+	float: left;
+	display: block;
+	color: #030303;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+  }
+  /* Change color on hover */
+  .topnav a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+
+
+/*------HEADER----- */
+.header h1{
+    font-size: 55px;
+}
+
+.header{
+    padding: 4% ;
+    text-align: center;
+	
+}
+/*------CONTAINER----- */
+.container{
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+}
+/*------SELECTION----- */
+section{
+	margin: 2em 0;
+	overflow: hidden;
+}
+
+section h2{
+	font-size: 3em;
+	display: block;
+	padding-bottom: .5em;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: .5em;
+}
+/*------TABELAS----- */
+table{
+	width: 100%;
+	margin-bottom : .5em;
+    table-layout: fixed;
+
+}
+/*------TH E TD----- */
+
+td, th {
+	padding: .7em;
+	margin: 0;
+	border: 1px solid #ccc;
+	text-align: center;
+}
+
+th{
+	font-weight: bold;
+	background-color: #EEE;
+}
+
+table {
+	font-family: arial, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+  }
+  
+  td, th {
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #dddddd;
+  }
+
+label{
+	color: #555;
+	display: block;
+	font-weight: bold;
+	margin-bottom: .2em;
+}
+
+.campo{
+	margin: 0;
+	padding-bottom: 1em;
+	width: 100%;
+	border: 1px solid #ccc;
+	padding: .7em;
+	width: 100%;
+}
+
+.campo-medio{
+	display: inline-block;
+	padding-right: .5em;
+}
+
+.grupo{
+	width: 32%;
+	display: inline-block;
+	padding: 10px 0px;
+}
+
+button{
+	padding: .5em 2em;
+	border: 0;
+	border-bottom: 3px solid;
+	font-size: 1.2em;
+	cursor: pointer;
+	margin: 0;
+	margin-top: -3px;
+	color: #fff;
+	background-color:#0c8cd3;
+	border-color: #04324c;
+	width: 20%;
+    display: block;
+    clear: both;
+    margin: 10px 0px;
+
+}
+
+button:active{
+	margin-top:0px;
+	border: 0;
+}
+
+button[disabled=disabled], button:disabled {
+    background-color: gray;
+	border-color: darkgray;
+
+}
+
+.adicionar-paciente{
+    margin-top: 30px;
+}
+
+.campo-invalido{
+	border: 1px solid red;
+}
