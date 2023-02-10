@@ -27,11 +27,17 @@ if(quant < 0 || quant > 1000){
 
 /*------EXCLUSÃO DE LINHA------*/
 
-var tabela = document.querySelector("tbody");
+var tabela = document.querySelector("table");
 
 tabela.addEventListener("dblclick",function(event){
+    event.target.parentNode.classList.add("AnimationRemove");
 
-    console.log("Fui clicado!");
+    setTimeout(() => {
+        event.target.parentNode.remove();
+    }, 500);
+    
+    /*alert("Produto" + elemntFilho + "oi removido da Lista.");*/
+   
 
 });
 
@@ -48,6 +54,13 @@ botao.addEventListener("click", function(event){
     
     var listaAddTr = myTr(objLista);
 
+
+
+    var tabela = document.querySelector("#tabela-lista");
+    tabela.appendChild(listaAddTr);
+
+    form.reset();
+
     var erro = validaLista(objLista);
     if(erro <= 0 || erro == null || erro == ""){
         var mensError  = document.querySelector("#error");
@@ -55,13 +68,6 @@ botao.addEventListener("click", function(event){
         console.log("Quantidade invalida");
         return;
     }
-
-    var tabela = document.querySelector("#tabela-lista");
-    tabela.appendChild(listaAddTr);
-
-    form.reset();
-
-   
     
 });
 
